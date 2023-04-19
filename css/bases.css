@@ -1,0 +1,101 @@
+html{
+    max-width: 1480px;
+    min-width: 320px;
+}
+
+
+
+
+/* Estilo para todo el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+/* Estilo para el contenido principal */
+.principal {
+max-width: 800px;
+margin: 0 auto;
+padding: 20px;
+background-image: url("/img/background_principal.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.principal__sobreMi img {
+max-width: 100%;
+height: auto;
+}
+
+.principal__sobreMi h2 {
+font-size: 24px;
+font-weight: bold;
+margin-top: 0;
+}
+
+.principal__sobreMi p {
+font-size: 16px;
+line-height: 1.5;
+}
+
+.principal__hobbies h2, .pricipal__formacion h2, .principal__experiencia h2, .principal__contacto h2 {
+font-size: 24px;
+font-weight: bold;
+margin-top: 0;
+}
+
+.principal__hobbies li, .pricipal__formacion li, .principal__experiencia li {
+font-size: 16px;
+line-height: 1.5;
+margin-bottom: 10px;
+}
+
+.principal__hobbies strong, .pricipal__formacion strong {
+font-weight: bold;
+}
+
+.principal__contacto label {
+display: block;
+font-size: 16px;
+margin-bottom: 10px;
+}
+
+.principal__contacto input[type="text"], .principal__contacto input[type="email"], .principal__contacto textarea {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+margin-bottom: 20px;
+}
+
+.principal__contacto button[type="submit"] {
+background-color: #333;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+.principal__contacto button[type="submit"]:hover {
+background-color: #555;
+}
+
+/* Estilo para el pie de página */
+.footer {
+background-color: #333;
+color: #fff;
+padding: 20px;
+text-align: center;
+}
+
+.footer__parrafo {
+margin: 0;
+font-size: 16px;
+}
