@@ -1,29 +1,38 @@
+:root {
+    --rosa-oscuro: #8B5A83;
+    --azul-pálido: #A9D9F1;
+    --amarillo-brillante: #F3B141;
+    --verde-menta: #96D4C4;
+    --gris-oscuro: #4C4C4C;
+  }
+  
+
 html{
     max-width: 1480px;
     min-width: 320px;
 }
-
-
-
 
 /* Estilo para todo el cuerpo de la página */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    
-}
+    background-color: var(--azul-pálido);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+    color: var(--gris-oscuro);
+  }
+  
 
 
 /* Estilo para el contenido principal */
 .principal {
-max-width: 800px;
-margin: 0 auto;
-padding: 20px;
-background-image: url("/img/background_principal.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+   
 }
 
 .principal__sobreMi img {
@@ -32,20 +41,40 @@ height: auto;
 }
 
 .principal__sobreMi h2 {
-font-size: 24px;
+font-size: 1.5rem;
 font-weight: bold;
 margin-top: 0;
 }
 
 .principal__sobreMi p {
-font-size: 16px;
+font-size: 1rem;
 line-height: 1.5;
+}
+
+.sobreMi{
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+
+.sobreMi__lista{
+    list-style:circle;
 }
 
 .principal__hobbies h2, .pricipal__formacion h2, .principal__experiencia h2, .principal__contacto h2 {
 font-size: 24px;
 font-weight: bold;
 margin-top: 0;
+padding-top: 3rem;
 }
 
 .principal__hobbies li, .pricipal__formacion li, .principal__experiencia li {
@@ -56,6 +85,21 @@ margin-bottom: 10px;
 
 .principal__hobbies strong, .pricipal__formacion strong {
 font-weight: bold;
+}
+
+.principal__contacto{
+    display: flex;
+    justify-content: space-around;
+}
+
+.ubicacion{
+    width: 40%;
+    
+}
+
+.contacto{
+    width: 40%;
+    margin: auto;
 }
 
 .principal__contacto label {
@@ -74,7 +118,7 @@ margin-bottom: 20px;
 
 .principal__contacto button[type="submit"] {
 background-color: #333;
-color: #fff;
+color: var(--verde-menta);
 padding: 10px 20px;
 border: none;
 border-radius: 5px;
@@ -89,7 +133,7 @@ background-color: #555;
 
 /* Estilo para el pie de página */
 .footer {
-background-color: #333;
+background-color: var(--verde-menta);
 color: #fff;
 padding: 20px;
 text-align: center;
@@ -99,3 +143,4 @@ text-align: center;
 margin: 0;
 font-size: 16px;
 }
+

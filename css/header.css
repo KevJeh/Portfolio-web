@@ -1,11 +1,22 @@
 /* Estilo para el encabezado */
 .header {
-background-color: #f1f1f1;
+background-color: #3a3838;
 display: flex;
 justify-content: space-around;
 align-items: center;
 padding: 10px;
+height: 25vh; /* Establecer la altura del encabezado en el 20% del viewport height */
+max-width: 100%; /* Establecer el ancho del encabezado en 100% del ancho del padre */
+background-color: var( --rosa-oscuro); /* Establecer el color de fondo del encabezado */
+border-bottom-left-radius: 30%; /* Establecer el radio para la esquina inferior izquierda */
+border-bottom-right-radius: 30%; /* Establecer el radio para la esquina inferior derecha */
+transition: all 0.3s ease-in-out;
+
 }
+
+header:hover {
+    transform: scale(1.1);
+  }
 
 .header__navegacion {
     display: flex;
@@ -28,7 +39,7 @@ display: flex;
 
 .navegacion__lista li a {
 text-decoration: none;
-color: #333;
+color: var( --amarillo-brillante);
 font-size: 16px;
 font-weight: bold;
 }
